@@ -62,6 +62,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import PostAddIcon from '@material-ui/icons/PostAdd';
 import BusinessIcon from '@material-ui/icons/Business';
+import Zoom from '@material-ui/core/Zoom';
 
 import Icon from '@material-ui/core/Icon';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
@@ -140,4 +141,5 @@ export default {
   PeopleAltIcon,
   BusinessIcon,
   PostAddIcon,
+  Zoom,
 };
