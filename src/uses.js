@@ -59,6 +59,9 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MailIcon from '@material-ui/icons/Mail';
+import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
+import PostAddIcon from '@material-ui/icons/PostAdd';
+import BusinessIcon from '@material-ui/icons/Business';
 
 import Icon from '@material-ui/core/Icon';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
@@ -134,4 +137,7 @@ export default {
   Fade,
   Box,
   AppsIcon,
+  PeopleAltIcon,
+  BusinessIcon,
+  PostAddIcon,
 };
