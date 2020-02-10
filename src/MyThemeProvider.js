@@ -2,10 +2,10 @@ import React from 'react'
 
 import useUiContext, { UiContext, muiTheme } from './useUiContext'
 
-const MyThemeProvider = ({ children }) => {
+const MyThemeProvider = ({ t, children }) => {
   const uses = useUiContext()
   const { ThemeProvider } = uses;
-  const theme = muiTheme()
+  const theme = t || muiTheme()
 
   return (
     <UiContext.Provider value={uses}>
