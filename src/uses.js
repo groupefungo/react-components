@@ -60,6 +60,11 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MailIcon from '@material-ui/icons/Mail';
 
+import Icon from '@material-ui/core/Icon';
+import GroupWorkIcon from '@material-ui/icons/GroupWork';
+import ToggleButton from '@material-ui/lab/ToggleButton';
+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+
 export default {
   makeStyles,
   Chip,
@@ -118,4 +123,8 @@ export default {
   MailIcon,
   InputLabel,
   createMuiTheme,
+  Icon,
+  GroupWorkIcon,
+  ToggleButton,
+  ToggleButtonGroup
 };
