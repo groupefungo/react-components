@@ -1,16 +1,18 @@
 import React from 'react'
-import muiTheme from './mui-theme'
 
-import useUiContext from './UiContext'
+import useUiContext, { UiContext, muiTheme } from './useUiContext'
 
 const MyThemeProvider = ({ children }) => {
-  const { ThemeProvider } = useUiContext()
+  const uses = useUiContext()
+  const { ThemeProvider } = uses;
   const theme = muiTheme()
 
   return (
-    <ThemeProvider theme={theme}>
-      {children}
-    </ThemeProvider>
+    <UiContext.Provider value={uses}>
+      <ThemeProvider theme={theme}>
+        {children}
+      </ThemeProvider>
+    </UiContext.Provider>
   )
 }
 

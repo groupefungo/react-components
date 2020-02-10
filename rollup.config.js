@@ -8,6 +8,9 @@ import svgr from '@svgr/rollup'
 
 import pkg from './package.json'
 
+import react from 'react';
+import reactDom from 'react-dom';
+
 export default {
   input: 'src/index.js',
   output: [
@@ -41,8 +44,14 @@ export default {
     commonjs({
       include: 'node_modules/**',
       namedExports: {
-        'node_modules/react-is/index.js': ['isFragment', 'ForwardRef']
+        'node_modules/react-is/index.js': ['isFragment', 'ForwardRef'],
+        react: Object.keys(react),
+        'react-dom': Object.keys(reactDom)
       }
     })
-  ]
+  ],
+  external: ['react', 'react-dom'],  globals: {
+    react: 'React',
+    'react-dom': 'ReactDOM'
+  }
 }

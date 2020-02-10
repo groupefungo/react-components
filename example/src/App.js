@@ -1,11 +1,20 @@
 import React from 'react'
 
-import {ThemeProvider, createMuiTheme} from '@material-ui/core'
+//import { ThemeProvider, createMuiTheme } from '@material-ui/core'
+
+import { MyThemeProvider } from 'testing'
+import AppBody from './AppBody'
+
+require('react-dom')
+window.React2 = require('react')
+
+console.log('App React2 version', window.React2.version)
+console.log('App react versions', window.React === window.React2)
 
 export default () => {
   return (
-    <ThemeProvider theme={createMuiTheme()}>
-      <div>adfadsf</div>
-    </ThemeProvider>
+    <MyThemeProvider>
+      <AppBody />
+    </MyThemeProvider>
   )
 }
