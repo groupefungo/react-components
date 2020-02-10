@@ -64,6 +64,7 @@ import Icon from '@material-ui/core/Icon';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+import Fade from '@material-ui/core/Fade';
 
 export default {
   makeStyles,
@@ -126,5 +127,6 @@ export default {
   Icon,
   GroupWorkIcon,
   ToggleButton,
-  ToggleButtonGroup
+  ToggleButtonGroup,
+  Fade
 };
