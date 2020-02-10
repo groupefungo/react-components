@@ -7,9 +7,9 @@ window.React4 = require('react')
 
 export const UiContext = createContext(uses)
 
-export const muiTheme = () => {
+export const muiTheme = (t) => {
   const { createMuiTheme } = uses
-  return createMuiTheme(theme)
+  return createMuiTheme(t || theme)
 }
 
 export default () => {

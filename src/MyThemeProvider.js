@@ -5,7 +5,7 @@ import useUiContext, { UiContext, muiTheme } from './useUiContext'
 const MyThemeProvider = ({ t, children }) => {
   const uses = useUiContext()
   const { ThemeProvider } = uses;
-  const theme = t || muiTheme()
+  const theme = muiTheme(t)
 
   return (
     <UiContext.Provider value={uses}>
