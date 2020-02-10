@@ -65,6 +65,9 @@ import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import Fade from '@material-ui/core/Fade';
+import Box from '@material-ui/core/Box'
+
+import AppsIcon from '@material-ui/icons/Apps';
 
 export default {
   makeStyles,
@@ -128,5 +131,7 @@ export default {
   GroupWorkIcon,
   ToggleButton,
   ToggleButtonGroup,
-  Fade
+  Fade,
+  Box,
+  AppsIcon,
 };
