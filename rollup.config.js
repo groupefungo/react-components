@@ -31,9 +31,18 @@ export default {
     svgr(),
     babel({
       exclude: 'node_modules/**',
-      plugins: [ 'external-helpers' ]
+      babelrc: false,
+      presets: [
+        '@babel/preset-env',
+        '@babel/preset-react',
+      ]
     }),
     resolve(),
-    commonjs()
+    commonjs({
+      include: 'node_modules/**',
+      namedExports: {
+        'node_modules/react-is/index.js': ['isFragment', 'ForwardRef']
+      }
+    })
   ]
 }

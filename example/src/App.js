@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import ExampleComponent from 'testing'
+import {ThemeProvider, createMuiTheme} from '@material-ui/core'
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
+export default () => {
+  return (
+    <ThemeProvider theme={createMuiTheme()}>
+      <div>adfadsf</div>
+    </ThemeProvider>
+  )
 }
