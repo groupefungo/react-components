@@ -50,8 +50,5 @@ export default {
       }
     })
   ],
-  external: ['react', 'react-dom'],  globals: {
-    react: 'React',
-    'react-dom': 'ReactDOM'
-  }
+  external: ['react', 'react-dom']
 }
