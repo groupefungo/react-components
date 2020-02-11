@@ -2,7 +2,7 @@ import React from 'react'
 
 //import { ThemeProvider, createMuiTheme } from '@material-ui/core'
 
-import { MyThemeProvider } from 'testing'
+import { BaseThemeProvider } from 'testing'
 import AppBody from './AppBody'
 
 require('react-dom')
@@ -13,8 +13,8 @@ console.log('App react versions', window.React === window.React2)
 
 export default () => {
   return (
-    <MyThemeProvider>
+    <BaseThemeProvider>
       <AppBody />
-    </MyThemeProvider>
+    </BaseThemeProvider>
   )
 }
