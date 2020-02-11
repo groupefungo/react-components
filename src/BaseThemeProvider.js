@@ -5,14 +5,16 @@ import muiTheme from './mui-theme'
 import UiContext from './UiContext'
 
 export default ({ t, children }) => {
-  const { ThemeProvider, createMuiTheme } = uses;
-
+  const { ThemeProvider, createMuiTheme, Container, CssBaseline } = uses;
   const theme = createMuiTheme(t || muiTheme)
 
   return (
     <UiContext.Provider value={uses}>
       <ThemeProvider theme={theme}>
-        {children}
+        <Container>
+          <CssBaseline />
+          {children}
+        </Container>
       </ThemeProvider>
     </UiContext.Provider>
   )
